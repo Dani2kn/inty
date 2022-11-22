@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2A8010D292C1DE300579A25 /* AddressItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8010C292C1DE300579A25 /* AddressItem.swift */; };
+		C2A80110292C431700579A25 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8010F292C431700579A25 /* AddButton.swift */; };
 		C2F41B8B292986C10004CF91 /* intyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41B8A292986C10004CF91 /* intyApp.swift */; };
 		C2F41B8D292986C10004CF91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41B8C292986C10004CF91 /* ContentView.swift */; };
 		C2F41B8F292986C40004CF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F41B8E292986C40004CF91 /* Assets.xcassets */; };
@@ -14,6 +16,10 @@
 		C2F41B9C292986C40004CF91 /* intyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41B9B292986C40004CF91 /* intyTests.swift */; };
 		C2F41BA6292986C40004CF91 /* intyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BA5292986C40004CF91 /* intyUITests.swift */; };
 		C2F41BA8292986C40004CF91 /* intyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BA7292986C40004CF91 /* intyUITestsLaunchTests.swift */; };
+		C2F41BD0292BFA4E0004CF91 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BCF292BFA4D0004CF91 /* Navigation.swift */; };
+		C2F41BD2292BFCDE0004CF91 /* RideSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */; };
+		C2F41BD4292BFD0B0004CF91 /* SmartCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */; };
+		C2F41BD7292C0E530004CF91 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD6292C0E530004CF91 /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2A8010C292C1DE300579A25 /* AddressItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressItem.swift; sourceTree = "<group>"; };
+		C2A8010F292C431700579A25 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		C2F41B87292986C10004CF91 /* inty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F41B8A292986C10004CF91 /* intyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intyApp.swift; sourceTree = "<group>"; };
 		C2F41B8C292986C10004CF91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,10 @@
 		C2F41BA1292986C40004CF91 /* intyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = intyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F41BA5292986C40004CF91 /* intyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intyUITests.swift; sourceTree = "<group>"; };
 		C2F41BA7292986C40004CF91 /* intyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2F41BCF292BFA4D0004CF91 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideSharing.swift; sourceTree = "<group>"; };
+		C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCar.swift; sourceTree = "<group>"; };
+		C2F41BD6292C0E530004CF91 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2A8010E292C42C400579A25 /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8010F292C431700579A25 /* AddButton.swift */,
+			);
+			path = structs;
+			sourceTree = "<group>";
+		};
 		C2F41B7E292986C10004CF91 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +114,9 @@
 		C2F41B89292986C10004CF91 /* inty */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8010E292C42C400579A25 /* structs */,
+				C2F41BD5292C0C990004CF91 /* items */,
+				C2F41BCE292BFA0B0004CF91 /* views */,
 				C2F41B8A292986C10004CF91 /* intyApp.swift */,
 				C2F41B8C292986C10004CF91 /* ContentView.swift */,
 				C2F41B8E292986C40004CF91 /* Assets.xcassets */,
@@ -125,6 +148,25 @@
 				C2F41BA7292986C40004CF91 /* intyUITestsLaunchTests.swift */,
 			);
 			path = intyUITests;
+			sourceTree = "<group>";
+		};
+		C2F41BCE292BFA0B0004CF91 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C2F41BCF292BFA4D0004CF91 /* Navigation.swift */,
+				C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */,
+				C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */,
+				C2F41BD6292C0E530004CF91 /* Address.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C2F41BD5292C0C990004CF91 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8010C292C1DE300579A25 /* AddressItem.swift */,
+			);
+			path = items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F41BD7292C0E530004CF91 /* Address.swift in Sources */,
+				C2F41BD2292BFCDE0004CF91 /* RideSharing.swift in Sources */,
+				C2A8010D292C1DE300579A25 /* AddressItem.swift in Sources */,
 				C2F41B8D292986C10004CF91 /* ContentView.swift in Sources */,
+				C2F41BD0292BFA4E0004CF91 /* Navigation.swift in Sources */,
+				C2A80110292C431700579A25 /* AddButton.swift in Sources */,
+				C2F41BD4292BFD0B0004CF91 /* SmartCar.swift in Sources */,
 				C2F41B8B292986C10004CF91 /* intyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
