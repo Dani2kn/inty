@@ -24,7 +24,10 @@ struct ContentView: View {
             VStack {
                 Toggle(isOn: $isRideShare) {
                     Text("")
-                }
+                }                
+                .padding(.bottom)
+                
+                Spacer()
                 
                 Image(systemName: isRideShare ? "externaldrive.badge.person.crop" : "car.front.waves.up")
                     .font(.system(size: 56))
