@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct RideSharing: View {
+    @Environment(\.isPresented) var isPresented
+    @EnvironmentObject private var appState: AppState
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                Section {
+                    ForEach(appState.rideShare) { addr in
+                        Text(addr.alias)
+                    }
+                } header: {
+                    Text("List of rideshared destinations")
+                }
+            }
+        }
+        .onChange(of: isPresented) { newValue in
+            if !newValue {
+                appState.isContextView = true
+            }
+        }
     }
 }
 

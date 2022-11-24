@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Navigation: View {
+    @EnvironmentObject private var appState: AppState
+    
     var body: some View {
         
         NavigationView {
@@ -16,7 +18,10 @@ struct Navigation: View {
                 
                 VStack {
                     
-                    NavigationLink(destination: Address().navigationTitle("Address"), label: {
+                    NavigationLink(destination: Address().navigationTitle("Address").onAppear{
+                        appState.isContextView = false
+                    }
+                                   , label: {
                         HStack {
                             Spacer()
                             
@@ -37,7 +42,10 @@ struct Navigation: View {
                     .cornerRadius(8)
                     .padding(.bottom, 60)
                     
-                    NavigationLink(destination: RideSharing().navigationTitle("RideSharing"), label: {
+                    NavigationLink(destination: RideSharing().navigationTitle("RideSharing").onAppear{
+                        appState.isContextView = false
+                    }
+                                   , label: {
                         HStack {
                             Spacer()
                             
@@ -58,7 +66,10 @@ struct Navigation: View {
                     .cornerRadius(8)
                     .padding(.bottom, 60)
                     
-                    NavigationLink(destination: SmartCar().navigationTitle("SmartCar"), label: {
+                    NavigationLink(destination: SmartCar().navigationTitle("SmartCar").onAppear{
+                        appState.isContextView = false
+                    }
+                                   , label: {
                         HStack {
                             Spacer()
                             

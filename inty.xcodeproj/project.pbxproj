@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		C2A8010D292C1DE300579A25 /* AddressItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8010C292C1DE300579A25 /* AddressItem.swift */; };
 		C2A80110292C431700579A25 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8010F292C431700579A25 /* AddButton.swift */; };
+		C2D7AA8D292EB0E70035B3EF /* IntyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D7AA8C292EB0E70035B3EF /* IntyMap.swift */; };
+		C2D7AA90292EB59B0035B3EF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D7AA8F292EB59B0035B3EF /* LocationManager.swift */; };
+		C2D7AA93292EC02B0035B3EF /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D7AA92292EC02B0035B3EF /* MKCoordinateRegion+Extensions.swift */; };
+		C2D7AA96292ED4200035B3EF /* LocalSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D7AA95292ED4200035B3EF /* LocalSearchService.swift */; };
+		C2D7AA98292ED6A70035B3EF /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D7AA97292ED6A70035B3EF /* Landmark.swift */; };
+		C2D7AA9A292EDF490035B3EF /* LandmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D7AA99292EDF490035B3EF /* LandmarkListView.swift */; };
 		C2F41B8B292986C10004CF91 /* intyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41B8A292986C10004CF91 /* intyApp.swift */; };
 		C2F41B8D292986C10004CF91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41B8C292986C10004CF91 /* ContentView.swift */; };
 		C2F41B8F292986C40004CF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F41B8E292986C40004CF91 /* Assets.xcassets */; };
@@ -42,6 +48,12 @@
 /* Begin PBXFileReference section */
 		C2A8010C292C1DE300579A25 /* AddressItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressItem.swift; sourceTree = "<group>"; };
 		C2A8010F292C431700579A25 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		C2D7AA8C292EB0E70035B3EF /* IntyMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntyMap.swift; sourceTree = "<group>"; };
+		C2D7AA8F292EB59B0035B3EF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C2D7AA92292EC02B0035B3EF /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
+		C2D7AA95292ED4200035B3EF /* LocalSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchService.swift; sourceTree = "<group>"; };
+		C2D7AA97292ED6A70035B3EF /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		C2D7AA99292EDF490035B3EF /* LandmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkListView.swift; sourceTree = "<group>"; };
 		C2F41B87292986C10004CF91 /* inty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F41B8A292986C10004CF91 /* intyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intyApp.swift; sourceTree = "<group>"; };
 		C2F41B8C292986C10004CF91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +103,30 @@
 			path = structs;
 			sourceTree = "<group>";
 		};
+		C2D7AA8E292EB57B0035B3EF /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				C2D7AA8F292EB59B0035B3EF /* LocationManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		C2D7AA91292EBF810035B3EF /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2D7AA92292EC02B0035B3EF /* MKCoordinateRegion+Extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		C2D7AA94292ED3E60035B3EF /* services */ = {
+			isa = PBXGroup;
+			children = (
+				C2D7AA95292ED4200035B3EF /* LocalSearchService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		C2F41B7E292986C10004CF91 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +150,9 @@
 		C2F41B89292986C10004CF91 /* inty */ = {
 			isa = PBXGroup;
 			children = (
+				C2D7AA94292ED3E60035B3EF /* services */,
+				C2D7AA91292EBF810035B3EF /* extensions */,
+				C2D7AA8E292EB57B0035B3EF /* managers */,
 				C2A8010E292C42C400579A25 /* structs */,
 				C2F41BD5292C0C990004CF91 /* items */,
 				C2F41BCE292BFA0B0004CF91 /* views */,
@@ -157,6 +196,8 @@
 				C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */,
 				C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */,
 				C2F41BD6292C0E530004CF91 /* Address.swift */,
+				C2D7AA8C292EB0E70035B3EF /* IntyMap.swift */,
+				C2D7AA99292EDF490035B3EF /* LandmarkListView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -165,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A8010C292C1DE300579A25 /* AddressItem.swift */,
+				C2D7AA97292ED6A70035B3EF /* Landmark.swift */,
 			);
 			path = items;
 			sourceTree = "<group>";
@@ -299,14 +341,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D7AA98292ED6A70035B3EF /* Landmark.swift in Sources */,
 				C2F41BD7292C0E530004CF91 /* Address.swift in Sources */,
+				C2D7AA96292ED4200035B3EF /* LocalSearchService.swift in Sources */,
 				C2F41BD2292BFCDE0004CF91 /* RideSharing.swift in Sources */,
+				C2D7AA90292EB59B0035B3EF /* LocationManager.swift in Sources */,
 				C2A8010D292C1DE300579A25 /* AddressItem.swift in Sources */,
+				C2D7AA93292EC02B0035B3EF /* MKCoordinateRegion+Extensions.swift in Sources */,
 				C2F41B8D292986C10004CF91 /* ContentView.swift in Sources */,
 				C2F41BD0292BFA4E0004CF91 /* Navigation.swift in Sources */,
 				C2A80110292C431700579A25 /* AddButton.swift in Sources */,
 				C2F41BD4292BFD0B0004CF91 /* SmartCar.swift in Sources */,
 				C2F41B8B292986C10004CF91 /* intyApp.swift in Sources */,
+				C2D7AA9A292EDF490035B3EF /* LandmarkListView.swift in Sources */,
+				C2D7AA8D292EB0E70035B3EF /* IntyMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +516,8 @@
 				DEVELOPMENT_TEAM = U3CV36K67M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This App requires your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App requires your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -497,6 +547,8 @@
 				DEVELOPMENT_TEAM = U3CV36K67M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This App requires your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App requires your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

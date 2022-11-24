@@ -10,22 +10,19 @@ import SwiftUI
 struct Address: View {
     
 //    @State private var editMode = EditMode.inactive
+    @EnvironmentObject private var appState: AppState
+    @Environment(\.isPresented) var isPresented
+    @State var needRefresh: Bool = false
     @State private var addMode = false
     @State private var inputText = ""
     
-    @AppStorage("address") var address = [
-        AddressItem(alias: "First Destination"),
-        AddressItem(alias: "Second Destination"),
-        AddressItem(alias: "Third Destination"),
-    ]
-    
     var AddButton: some View {
         Button( addMode ? "Done" : "Add", action: {
-            addMode = !addMode                        
-            
             if (addMode && !inputText.isEmpty) {
                 addItem()
             }
+            
+            addMode.toggle()
         })
     }
     
@@ -47,7 +44,7 @@ struct Address: View {
                
                 
                 Section {
-                    ForEach(address) { addr in
+                    ForEach(appState.addressItems) { addr in
                         Text(addr.alias)
                     }
                     .onDelete(perform: deleteItem)
@@ -57,7 +54,7 @@ struct Address: View {
                 }
             }
             .refreshable {
-                address = [
+                appState.addressItems = [
                     AddressItem(alias: "First"),
                     AddressItem(alias: "Second"),
                     AddressItem(alias: "Third"),
@@ -72,22 +69,27 @@ struct Address: View {
         }
         .navigationBarTitle(Text("Address"))
         .navigationBarItems(trailing: AddButton)
+        .onChange(of: isPresented) { newValue in            
+            if !newValue {
+                appState.isContextView = true
+            }
+        }
 //        .navigationBarItems(trailing: EditButton())
 //        .environment(\.editMode, $editMode)
     
     }
     
     private func addItem() {
-        address.append(AddressItem(alias: inputText))
+        appState.addressItems.append(AddressItem(alias: inputText))
         inputText = ""
     }
     
     private func deleteItem(at offsets: IndexSet) {
-        address.remove(atOffsets: offsets)
+        appState.addressItems.remove(atOffsets: offsets)
     }
     
     private func moveItem(from source: IndexSet, to destination: Int) {
-        address.move(fromOffsets: source, toOffset: destination)
+        appState.addressItems.move(fromOffsets: source, toOffset: destination)
     }
     
 }
