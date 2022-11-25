@@ -10,6 +10,8 @@
 		5F1783CB8C690E2B43ADAABC /* Pods_inty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E292035AEA5779BCCA8D21 /* Pods_inty.framework */; };
 		C2A8010D292C1DE300579A25 /* AddressItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8010C292C1DE300579A25 /* AddressItem.swift */; };
 		C2A80110292C431700579A25 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8010F292C431700579A25 /* AddButton.swift */; };
+		C2F3E7C92930DC370008E65C /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3E7C82930DC370008E65C /* MapModel.swift */; };
+		C2F3E7CB2930DEE40008E65C /* AddressMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3E7CA2930DEE40008E65C /* AddressMap.swift */; };
 		C2F41B8B292986C10004CF91 /* intyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41B8A292986C10004CF91 /* intyApp.swift */; };
 		C2F41B8D292986C10004CF91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41B8C292986C10004CF91 /* ContentView.swift */; };
 		C2F41B8F292986C40004CF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F41B8E292986C40004CF91 /* Assets.xcassets */; };
@@ -20,7 +22,7 @@
 		C2F41BD0292BFA4E0004CF91 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BCF292BFA4D0004CF91 /* Navigation.swift */; };
 		C2F41BD2292BFCDE0004CF91 /* RideSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */; };
 		C2F41BD4292BFD0B0004CF91 /* SmartCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */; };
-		C2F41BD7292C0E530004CF91 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD6292C0E530004CF91 /* Address.swift */; };
+		C2F41BD7292C0E530004CF91 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD6292C0E530004CF91 /* AddressView.swift */; };
 		DC39F2BAE50CEF279050B7DC /* Pods_inty_intyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B48582ABAE65CAB4AA6092 /* Pods_inty_intyUITests.framework */; };
 		FF3BF6DFF92994A93675C7C5 /* Pods_intyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C871B55D725F124BF6EBA0 /* Pods_intyTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,9 @@
 		A7B48582ABAE65CAB4AA6092 /* Pods_inty_intyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inty_intyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A8010C292C1DE300579A25 /* AddressItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressItem.swift; sourceTree = "<group>"; };
 		C2A8010F292C431700579A25 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		C2F3E7C82930DC370008E65C /* MapModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		C2F3E7CA2930DEE40008E65C /* AddressMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressMap.swift; sourceTree = "<group>"; };
+		C2F3E7CC2930DF6B0008E65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C2F41B87292986C10004CF91 /* inty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F41B8A292986C10004CF91 /* intyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intyApp.swift; sourceTree = "<group>"; };
 		C2F41B8C292986C10004CF91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,7 +70,7 @@
 		C2F41BCF292BFA4D0004CF91 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideSharing.swift; sourceTree = "<group>"; };
 		C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCar.swift; sourceTree = "<group>"; };
-		C2F41BD6292C0E530004CF91 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		C2F41BD6292C0E530004CF91 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		C8E292035AEA5779BCCA8D21 /* Pods_inty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04D6B7854DD2196A96518CC /* Pods-intyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intyTests.release.xcconfig"; path = "Target Support Files/Pods-intyTests/Pods-intyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,11 +149,13 @@
 		C2F41B89292986C10004CF91 /* inty */ = {
 			isa = PBXGroup;
 			children = (
+				C2F3E7CC2930DF6B0008E65C /* Info.plist */,
 				C2A8010E292C42C400579A25 /* structs */,
 				C2F41BD5292C0C990004CF91 /* items */,
 				C2F41BCE292BFA0B0004CF91 /* views */,
 				C2F41B8A292986C10004CF91 /* intyApp.swift */,
 				C2F41B8C292986C10004CF91 /* ContentView.swift */,
+				C2F3E7C82930DC370008E65C /* MapModel.swift */,
 				C2F41B8E292986C40004CF91 /* Assets.xcassets */,
 				C2F41B90292986C40004CF91 /* Preview Content */,
 			);
@@ -186,7 +193,8 @@
 				C2F41BCF292BFA4D0004CF91 /* Navigation.swift */,
 				C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */,
 				C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */,
-				C2F41BD6292C0E530004CF91 /* Address.swift */,
+				C2F41BD6292C0E530004CF91 /* AddressView.swift */,
+				C2F3E7CA2930DEE40008E65C /* AddressMap.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -447,7 +455,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2F41BD7292C0E530004CF91 /* Address.swift in Sources */,
+				C2F41BD7292C0E530004CF91 /* AddressView.swift in Sources */,
+				C2F3E7C92930DC370008E65C /* MapModel.swift in Sources */,
 				C2F41BD2292BFCDE0004CF91 /* RideSharing.swift in Sources */,
 				C2A8010D292C1DE300579A25 /* AddressItem.swift in Sources */,
 				C2F41B8D292986C10004CF91 /* ContentView.swift in Sources */,
@@ -455,6 +464,7 @@
 				C2A80110292C431700579A25 /* AddButton.swift in Sources */,
 				C2F41BD4292BFD0B0004CF91 /* SmartCar.swift in Sources */,
 				C2F41B8B292986C10004CF91 /* intyApp.swift in Sources */,
+				C2F3E7CB2930DEE40008E65C /* AddressMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +627,7 @@
 				DEVELOPMENT_TEAM = U3CV36K67M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = inty/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This App requires your location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App requires your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -649,6 +660,7 @@
 				DEVELOPMENT_TEAM = U3CV36K67M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = inty/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This App requires your location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App requires your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

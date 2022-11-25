@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-struct Address: View {
-    
-//    @State private var editMode = EditMode.inactive
+struct AddressView: View {
+    //    @State private var editMode = EditMode.inactive
     @EnvironmentObject private var appState: AppState
     @Environment(\.isPresented) var isPresented
     @State var needRefresh: Bool = false
@@ -28,55 +27,45 @@ struct Address: View {
     
     var body: some View {
         NavigationView {
-            List {
-                
-                if (addMode) {
+            
+            if (addMode) {
+                AddressMap()
+            } else {
+                List {
+                                                            
                     Section {
-                        TextField("Destination", text: $inputText)
-                            .onSubmit(of: .text, {
-                                addItem()
-                                addMode = false
-                            })
+                        ForEach(appState.addressItems) { addr in
+                            Text(addr.alias)
+                        }
+                        .onDelete(perform: deleteItem)
+                        .onMove(perform: moveItem)
                     } header: {
-                        Text("Add a destination")
+                        Text("List of available destinations")
                     }
                 }
-               
-                
-                Section {
-                    ForEach(appState.addressItems) { addr in
-                        Text(addr.alias)
-                    }
-                    .onDelete(perform: deleteItem)
-                    .onMove(perform: moveItem)
-                } header: {
-                    Text("List of available destinations")
+                .refreshable {
+                    appState.addressItems = [
+                        AddressItem(alias: "First"),
+                        AddressItem(alias: "Second"),
+                        AddressItem(alias: "Third"),
+                    ]
                 }
-            }
-            .refreshable {
-                appState.addressItems = [
-                    AddressItem(alias: "First"),
-                    AddressItem(alias: "Second"),
-                    AddressItem(alias: "Third"),
-                ]
-            }
-            .toolbar {
-                EditButton()
-//                AddButton
-
+                .toolbar {
+                    EditButton()
+//                    AddButton
+                    
+                }
             }
             
         }
         .navigationBarTitle(Text("Address"))
         .navigationBarItems(trailing: AddButton)
-        .onChange(of: isPresented) { newValue in            
+        .onChange(of: isPresented) { newValue in
             if !newValue {
                 appState.isContextView = true
             }
         }
-//        .navigationBarItems(trailing: EditButton())
-//        .environment(\.editMode, $editMode)
-    
+        
     }
     
     private func addItem() {
@@ -96,6 +85,6 @@ struct Address: View {
 
 struct Address_Previews: PreviewProvider {
     static var previews: some View {
-        Address()
+        AddressView()
     }
 }

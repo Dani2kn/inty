@@ -18,7 +18,7 @@ struct Navigation: View {
                 
                 VStack {
                     
-                    NavigationLink(destination: Address().navigationTitle("Address").onAppear{
+                    NavigationLink(destination: AddressView().navigationTitle("Address").onAppear{
                         appState.isContextView = false
                     }
                                    , label: {
