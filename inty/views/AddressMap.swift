@@ -10,7 +10,7 @@ import MapKit
 
 struct AddressMap: View {
     @EnvironmentObject private var appState: AppState
-    @StateObject private var mapAPI = MapAPI()
+    @StateObject private var mapAPI = MapAPI()    
     @State private var addr = ""
     
     var body: some View {

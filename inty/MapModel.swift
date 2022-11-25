@@ -25,13 +25,14 @@ struct Location: Identifiable {
     let coordinate: CLLocationCoordinate2D
 }
 
-class MapAPI: ObservableObject{
+class MapAPI: ObservableObject {
     private let BASE_URL = "http://api.positionstack.com/v1/forward"
     private let API_KEY = "92d0989cebd26dea67f59db3a280d7a6"
     
     @Published var region: MKCoordinateRegion
     @Published var coordinates = []
     @Published var locations: [Location] = []
+    @Published var suggestions: [AddressItem] = []
     
     
     init() {
@@ -64,7 +65,13 @@ class MapAPI: ObservableObject{
             
             // Set the new data
             DispatchQueue.main.async {
-                let suggestions = newCoordinates.data
+                self.suggestions = newCoordinates.data.filter({ suggestion in
+                    return (suggestion.name != nil)
+                })
+                .map({ suggestion in
+                    return AddressItem(alias: "\(suggestion.name)")
+                })
+                
                 let details = newCoordinates.data[0]
                 let lat = details.latitude
                 let lon = details.longitude
