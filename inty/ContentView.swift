@@ -25,7 +25,7 @@ struct ContentView: View {
                 Toggle(isOn: $isRideShare) {
                     Text("")
                 }                
-                .padding(.bottom)
+                .padding([.top, .bottom, .trailing])
                 
                 Spacer()
                 

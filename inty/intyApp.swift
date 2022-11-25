@@ -12,6 +12,7 @@ class AppState: ObservableObject {
     @Published var rideShare: [AddressItem] = []
     @Published var smartCar: [AddressItem] = []
     @Published var isContextView = true
+//    @AppStorage("addressItems") private var stAddressItems: [AddressItem] = []
 }
 
 @main
