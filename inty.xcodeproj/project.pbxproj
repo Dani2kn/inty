@@ -23,6 +23,11 @@
 		C2F41BD2292BFCDE0004CF91 /* RideSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */; };
 		C2F41BD4292BFD0B0004CF91 /* SmartCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */; };
 		C2F41BD7292C0E530004CF91 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F41BD6292C0E530004CF91 /* AddressView.swift */; };
+		C2F4DC9729380BCE00977E5F /* TouristicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DC9629380BCE00977E5F /* TouristicList.swift */; };
+		C2F4DC9929380DD200977E5F /* SocialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DC9829380DD200977E5F /* SocialList.swift */; };
+		C2F4DC9B29380DEC00977E5F /* RestaurantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DC9A29380DEC00977E5F /* RestaurantList.swift */; };
+		C2F4DC9D2938106D00977E5F /* DestinationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DC9C2938106D00977E5F /* DestinationItem.swift */; };
+		C2F4DCA2293816C700977E5F /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DCA1293816C700977E5F /* DestinationView.swift */; };
 		DC39F2BAE50CEF279050B7DC /* Pods_inty_intyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B48582ABAE65CAB4AA6092 /* Pods_inty_intyUITests.framework */; };
 		FF3BF6DFF92994A93675C7C5 /* Pods_intyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C871B55D725F124BF6EBA0 /* Pods_intyTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +76,11 @@
 		C2F41BD1292BFCDE0004CF91 /* RideSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideSharing.swift; sourceTree = "<group>"; };
 		C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCar.swift; sourceTree = "<group>"; };
 		C2F41BD6292C0E530004CF91 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		C2F4DC9629380BCE00977E5F /* TouristicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristicList.swift; sourceTree = "<group>"; };
+		C2F4DC9829380DD200977E5F /* SocialList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialList.swift; sourceTree = "<group>"; };
+		C2F4DC9A29380DEC00977E5F /* RestaurantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantList.swift; sourceTree = "<group>"; };
+		C2F4DC9C2938106D00977E5F /* DestinationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationItem.swift; sourceTree = "<group>"; };
+		C2F4DCA1293816C700977E5F /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		C8E292035AEA5779BCCA8D21 /* Pods_inty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04D6B7854DD2196A96518CC /* Pods-intyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intyTests.release.xcconfig"; path = "Target Support Files/Pods-intyTests/Pods-intyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +205,10 @@
 				C2F41BD3292BFD0B0004CF91 /* SmartCar.swift */,
 				C2F41BD6292C0E530004CF91 /* AddressView.swift */,
 				C2F3E7CA2930DEE40008E65C /* AddressMap.swift */,
+				C2F4DC9629380BCE00977E5F /* TouristicList.swift */,
+				C2F4DC9829380DD200977E5F /* SocialList.swift */,
+				C2F4DC9A29380DEC00977E5F /* RestaurantList.swift */,
+				C2F4DCA1293816C700977E5F /* DestinationView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -203,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A8010C292C1DE300579A25 /* AddressItem.swift */,
+				C2F4DC9C2938106D00977E5F /* DestinationItem.swift */,
 			);
 			path = items;
 			sourceTree = "<group>";
@@ -455,16 +470,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F4DC9729380BCE00977E5F /* TouristicList.swift in Sources */,
 				C2F41BD7292C0E530004CF91 /* AddressView.swift in Sources */,
+				C2F4DC9929380DD200977E5F /* SocialList.swift in Sources */,
 				C2F3E7C92930DC370008E65C /* MapModel.swift in Sources */,
 				C2F41BD2292BFCDE0004CF91 /* RideSharing.swift in Sources */,
 				C2A8010D292C1DE300579A25 /* AddressItem.swift in Sources */,
 				C2F41B8D292986C10004CF91 /* ContentView.swift in Sources */,
 				C2F41BD0292BFA4E0004CF91 /* Navigation.swift in Sources */,
 				C2A80110292C431700579A25 /* AddButton.swift in Sources */,
+				C2F4DC9D2938106D00977E5F /* DestinationItem.swift in Sources */,
 				C2F41BD4292BFD0B0004CF91 /* SmartCar.swift in Sources */,
 				C2F41B8B292986C10004CF91 /* intyApp.swift in Sources */,
+				C2F4DCA2293816C700977E5F /* DestinationView.swift in Sources */,
 				C2F3E7CB2930DEE40008E65C /* AddressMap.swift in Sources */,
+				C2F4DC9B29380DEC00977E5F /* RestaurantList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
